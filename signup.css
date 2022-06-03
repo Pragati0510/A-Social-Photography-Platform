@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Zen+Antique&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    background-color: rgb(17, 16, 16);
+    color: ivory;
+    overflow: auto;
+}
+h1, h2, h3,h4,h5,h6{
+    font-weight: 300;
+} 
+.wraper{
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+flex:1;
+}
+#right{
+flex:3;
+}
+.signin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+    padding-bottom: 1rem;
+    
+}
+.signin form{
+    width: 80%;
+    padding-bottom: 3rem;
+}
+.signin .logo img{
+    width: 300px;
+
+}
+
+.signin label{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+.signin .text-input{
+    margin-bottom:1.3rem ;
+    width: 100%;
+    border-radius: 2px;
+    background: rgb(17, 16, 16);
+    color: ivory;
+    border: 1px solid rgb(116, 111, 111);
+    padding:0.5rem 1rem;
+    line-height: 1.3;
+}
+/*button*/
+.primary-btn{
+    padding:0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background-color: orangered;
+    color: ivory;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    text-align: center;
+    width:100%;
+}
+.secondary-btn :hover{
+    background-color: rgb(29, 15, 10);
+}
+.secondary-btn{
+    padding:0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: solid 1px grey;
+    border-radius: 2px;
+    font-weight: 500;
+    color: ivory;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    text-align: center;
+    
+}
+.signin .secondary-btn ,
+.or,
+.links{
+    width:60%
+}
+.links a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.btn :hover{
+border-color: orangered;
+}
+.or{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items:center;
+}
+.or .bar{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: grey;
+}
+.or span{
+    color: grey;
+    padding: 0 0.5rem;
+}
+#main-footer{
+    text-align: center;
+    color: ivory;
+    font-size: 0.8rem;
+    padding-top: 5rem;
+    width: 80%;
+}
+#main-footer a{
+    color: orangered;
+    text-decoration: underline;
+}
+/*showcase*/
+#right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url('cam1.jpg') repeat center center/cover ;
+    height: 135vh; 
+    text-align: center;
+    margin: 0;
+    background-image: 100%;
+
+
+    
+}
+#right .showcasecontent{
+    justify-content: center;
+    text-align: center;
+align-items: center;
+padding-left: 10%;
+padding-right: 10%;
+}
+#right .showcase-text{
+    width:100%;
+    font-size:2.5rem;
+    margin-bottom: 2rem;
+    color: ivory;
+    align-items: center;
+    
+}
+#right .secondary-btn{
+    align-items: center;
+    
+}
+
+.wraper{
+    overflow-x: hidden;
+}
+/*navbar*/
+h3{
+    font-size: 45px;
+    font-weight: 800;
+width: 100%;
+margin: 0%;
+padding: 5px;
+font-family:'Times New Roman', Times, serif;}
+.upperlinks a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+margin-top: 10px;
+color: ivory;
+padding: 10px;
+font-size: 18px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.upperlinks a:hover{
+    background-color: grey;
+}
+.upperlinks li{
+display: inline-flex;
+color: ivory;
+}
+.upperlinks{
+    display: flex;
+    justify-content: flex-end;
+background-color: rgb(56, 54, 54);
+}
+.upperlinks h3{
+    padding: 18px;
+color: ivory;}
+.upperlinks ul{
+width: 100%;
+padding: 15px;
+
+}
+
+/*Media Queries*/
+
+@media(min-width:1200px){
+ #left{
+     flex: 4;
+ }
+ #right{
+     flex:6;
+ }
+}
+@media (max-width:760px) {
+    #right{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
